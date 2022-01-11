@@ -1,1 +1,21 @@
 Resposta:
+
+O que significa termos um programa assíncrono?
+
+Um programa assíncrono possui tarefas que não executam com intervalos regulares, não são controladas por temporizadores. 
+Não é necessário esperar que uma tarefa seja finalizada para depois prosseguir com as demais. Algumas podem executar inclusive ao mesmo tempo, quando forem processadas em computadores que possuem mais de um núcleo, por exemplo.
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+Quando uma função for assíncrona, quando é recomendado utilizar o Await?
+
+Promises são usadas para lidar com operações assíncronas em JavaScript e representam o cumprimento ou a falha de uma operação assíncrona.
+Uma Promise pode ter três estados:
+● pending (pendente): Estado inicial, que não foi realizada nem rejeitada 
+● fulﬁlled (realizada): A execução foi concluída com sucesso 
+● rejected (rejeitado): Ocorreu alguma falha na execução
+A palavra reservada AWAIT serve para “esperar” a conclusão de uma Promise e só pode ser utilizada dentro de uma função assíncrona. 
+Como AWAIT é utilizado para aguardar a conclusão de uma Promise, o resultado dessa espera é o próprio retorno da promise resolvida. 
+
+Pode ser útil quando há a necessidade de utilizar um resultado de um trecho anterior em outro subsequente. Também reduz a quantidade de blocos .then() no código.
+É uma estrutura assíncrona operando com características síncronas.
